@@ -1,0 +1,40 @@
+optimizer : {
+  type: AdamW,
+  kwargs: {
+  lr : 0.0005, 
+  weight_decay : 0.05
+}}
+
+scheduler: {
+  type: CosLR,
+  kwargs: {
+    epochs: 300,
+    initial_epochs : 10
+}}
+
+
+dataset : {
+  train : { _base_: cfgs/dataset_configs/PCN.yaml, 
+            others: {subset: 'train'}},
+  val : { _base_: cfgs/dataset_configs/PCN.yaml, 
+            others: {subset: 'test'}},
+  test : { _base_: cfgs/dataset_configs/PCN.yaml, 
+            others: {subset: 'test'}}}
+model : {
+  NAME: OAE_PoinTr, 
+  num_pred: 14336, 
+  num_query: 224, 
+  knn_layer: 1, 
+  trans_dim: 384, 
+  group_size: 16, 
+  num_group: 128, 
+  drop_path_rate: 0.1, 
+  }
+  
+total_bs : 24
+step_per_update : 1
+max_epoch : 300
+clip_gradients: False
+clip_grad: 3.0
+
+consider_metric: CDL1
