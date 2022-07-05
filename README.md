@@ -15,14 +15,14 @@ We present a novel self-supervised point cloud representation learning framework
 We first extract seed points from the input point cloud using FPS, and then separate the input into point patches by grouping local points around each seed point using KNN. After that, we randomly occlude high ratio of patches and subtract each visible patch to its corresponding seed point for detaching the patch from its spatial location. The encoder operates only on the embeddings of visible patches and the learnable occlusion tokens are combined to the latent feature before the decoder . Finally, we operate addition to the output patches and their corresponding seed points to regain their spatial locations and further merge the local patches into a complete shape, where we compute a loss function with the ground truth.
 
 ## Pretrained Models
-|Model| Dataset  | Task. | Performance. | Config | Url|
+|Model| Dataset  | Task | Performance | Config | Url|
 | :---:| :---: | :---: |  :---: | :---: | :---: |
 | 3D-OAE (SSL) | ShapeNet | Linear-SVM | 92.3 (Acc.) | [config](cfgs/SSL_models/Point-OAE_2k.yaml) | [Google Drive](https://drive.google.com/file/d/1_s4mi-oKY21nOG7c9ZgNuwNJwH_2QfS_/view?usp=sharing) |
 | Transformer/PoinTr | PCN |Point Cloud Completion| 6.97 (CD.)| [config](cfgs/PCN_models/Transformer_pcn.yaml)| [Google Drive](https://drive.google.com/file/d/1gCud4WI_zhVkuCXCIbiyKK4wx2yso66H/view?usp=sharing) | 
 | Transformer| ModelNet | Classification | 93.4 (Acc.)|  [config](cfgs/ModelNet_models/Transformer_1k.yaml) | [Google Drive](https://drive.google.com/file/d/1LIyayrmyCppBu8jmVmA69bAhDWelASnw/view?usp=sharing) |
 | Transformer| ScanObjectNN |Classification| 89.16 (Acc.) | [config](cfgs/ScanObjectNN_models/Transformer_objectbg.yaml) | [Google Drive](https://drive.google.com/file/d/15XTQEf-DthrqLAE9RUAF-hDhs2RShMv_/view?usp=sharing) |
 | Transformer| ScanObjectNN |Classification| 88.64 (Acc.) | [config](cfgs/ScanObjectNN_models/Transformer_objectonly.yaml) | [Google Drive](https://drive.google.com/file/d/1QQPj45-VV4WIktxscIqEuT5YVdxSgKX5/view?usp=sharing) |
-| Transformer| ScanObjectNN |Classification| 83.17 (Acc.) | [config](cfgs/ScanObjectNN_models/Transformer_hardest.yaml) | [Google Drive](https://drive.google.com/file/d/1iLg0Gi1jzf7yktWoc5w_e9p4tBj9FEaE/view?usp=sharing) |
+| Transformer| ScanObjectNN |Classification| 85.7 (Acc.) | [config](cfgs/ScanObjectNN_models/Transformer_hardest.yaml) | [Google Drive](https://drive.google.com/file/d/1iLg0Gi1jzf7yktWoc5w_e9p4tBj9FEaE/view?usp=sharing) |
 | Transformer| ShapeNetPart |Part Segmentation| 83.17 (Acc.) | [config](cfgs/ShapeNetPart_models/Transformer_seg.yaml) | [Google Drive](https://drive.google.com/file/d/1vdxFZmHbwucjdILmPftqO7YlUuIW70Er/view?usp=sharing) |
 
 
