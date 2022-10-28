@@ -149,7 +149,7 @@ Some of the code of this repo is borrowed from [Point-BERT](https://github.com/l
 If you find our work useful in your research, please consider citing: 
 ```
 @article{zhou2022-3DOAE,
-      title={Self-Supervised Point Cloud Representation Learning with Occlusion Auto-Encoder},
+      title={3D-OAE: Occlusion Auto-Encoders for Self-Supervised Learning on Point Clouds},
       author={Zhou, Junsheng and Wen, Xin and Ma, Baorui and Liu, Yu-Shen and Gao, Yue and Fang, Yi and Han, Zhizhong},
       journal={arXiv preprint arXiv:2203.14084},
       year={2022}
