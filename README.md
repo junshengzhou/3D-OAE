@@ -1,4 +1,4 @@
-# 3D-OAE: Occlusion Auto-Encoders for Self-Supervised Learning on Point Clouds
+# 3D-OAE: Occlusion Auto-Encoders for Self-Supervised Learning on Point Clouds (ICRA24)
 
 Created by [Junsheng Zhou](https://junshengzhou.github.io/), [Xin Wen](https://scholar.google.com/citations?user=7gcGzs8AAAAJ&hl=zh-CN&oi=ao), [Baorui Ma](https://mabaorui.github.io/), [Yu-Shen Liu](https://yushen-liu.github.io/), [Yue Gao](https://www.gaoyue.org/), [Yi Fang](http://mmvc.engineering.nyu.edu/), [Zhizhong Han](https://h312h.github.io/)
 
@@ -148,10 +148,10 @@ Some of the code of this repo is borrowed from [Point-BERT](https://github.com/l
 ## Citation
 If you find our work useful in your research, please consider citing: 
 ```
-@article{zhou2022-3DOAE,
-      title={3D-OAE: Occlusion Auto-Encoders for Self-Supervised Learning on Point Clouds},
-      author={Zhou, Junsheng and Wen, Xin and Ma, Baorui and Liu, Yu-Shen and Gao, Yue and Fang, Yi and Han, Zhizhong},
-      journal={arXiv preprint arXiv:2203.14084},
-      year={2022}
+@article{zhou20223d,
+  title={3D-OAE: Occlusion Auto-Encoders for Self-Supervised Learning on Point Clouds},
+  author={Zhou, Junsheng and Wen, Xin and Ma, Baorui and Liu, Yu-Shen and Gao, Yue and Fang, Yi and Han, Zhizhong},
+  journal={IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2024}
 }
 ```
